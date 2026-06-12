@@ -16,7 +16,7 @@ export default function About() {
           src="/about/hero%20image.png"
           alt="M2M Joinery workshop interior"
           fill
-          className="object-cover object-[center_60%] rounded-none"
+          className="object-cover object-[center_35%] rounded-none"
           priority
           sizes="100vw"
         />

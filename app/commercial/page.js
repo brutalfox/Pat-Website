@@ -106,7 +106,7 @@ export default function Commercial() {
 
           <div className="relative min-h-72 lg:min-h-[480px]">
             <Image
-              src="/commercial/one.png"
+              src="/commercial/one.jpg"
               alt="M2M Joinery commercial manufacturing facility"
               fill
               className="object-cover rounded-none"
