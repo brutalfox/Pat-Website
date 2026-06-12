@@ -80,8 +80,8 @@ export default function Residential() {
 
           <div className="relative min-h-72 lg:min-h-[480px]">
             <Image
-              src="/home/precision-machining.jpg"
-              alt="Precision joinery production — structural lines and workshop framing"
+              src="/residential/wardrobe%20assembly.png"
+              alt="Wardrobe assembly in the M2M Joinery workshop"
               fill
               className="object-cover rounded-none"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -100,8 +100,8 @@ export default function Residential() {
 
           <div className="relative min-h-72 lg:min-h-[480px]">
             <Image
-              src="/home/workshop-assembly.jpg"
-              alt="Bench joiner carrying out hands-on cabinet assembly"
+              src="/residential/spray%20room.png"
+              alt="M2M Joinery spray room — factory-finished cabinet painting"
               fill
               className="object-cover rounded-none"
               sizes="(max-width: 1024px) 100vw, 50vw"

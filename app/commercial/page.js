@@ -10,17 +10,18 @@ const costaBullets = [
   'Compliance with brand design standards and material specifications',
 ];
 
-const nandosBullets = [
-  'Bespoke feature joinery manufactured to architect specification',
-  'Pre-assembled units to minimise on-site installation time',
-  'Robust construction suited to high-traffic restaurant environments',
+const pelicanBullets = [
+  'Complete manufacture and professional on-site fitting service',
+  'Durable exterior timber work engineered to withstand the elements',
+  'Bespoke internal feature joinery crafted to enhance traditional pub character',
 ];
 
-const hotelBullets = [
-  'Premium timber species and high-specification lacquer finishes',
-  'Phased delivery coordination aligned with hotel construction programmes',
-  'Architectural quality panelling, joinery, and furniture suites',
+const crownePlazaBullets = [
+  'Premium architectural joinery manufactured precisely to designer specification',
+  'Expertly crafted off-site production to support streamlined project timelines',
+  'High-grade material construction engineered for busy hotel and dining spaces',
 ];
+
 
 function CheckList({ items }) {
   return (
@@ -127,10 +128,89 @@ export default function Commercial() {
       </div>
 
 
-      {/* ── 4. Case Study: Costa Coffee ──────────────────────────
+      {/* ── 4. Case Study: The Pelican, Chew Magna ───────────────
           Text LEFT · Image RIGHT
       ───────────────────────────────────────────────────────── */}
       <section className="bg-white border-t border-zinc-200/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+
+          <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
+            <p className="text-[10px] font-semibold tracking-widest uppercase text-zinc-400 mb-3">
+              Case Study
+            </p>
+            <h3 className="font-medium text-zinc-900 text-lg md:text-xl mb-4">
+              Full Interior &amp; Exterior Joinery Fit-Out for The Pelican, Chew Magna
+            </h3>
+            <p className="font-normal text-zinc-600 text-base leading-relaxed">
+              Country pub refit projects require a seamless blend of traditional character,
+              weather-resistant durability, and expert on-site execution. For The Pelican in Chew
+              Magna, M2M Joinery Ltd managed the complete end-to-end production and installation
+              process, delivering both high-quality internal features and durable exterior
+              enhancements. Our team manufactured and fully fitted a comprehensive joinery
+              package — including bespoke bar areas, characterful indoor seating, and structural
+              external features — ensuring the historic venue was completely revitalised inside
+              and out.
+            </p>
+            <CheckList items={pelicanBullets} />
+          </div>
+
+          <div className="relative min-h-72 lg:min-h-[480px]">
+            <Image
+              src="/commercial/pelican%20pub%202.webp"
+              alt="The Pelican, Chew Magna — bespoke pub joinery fit-out"
+              fill
+              className="object-cover rounded-none"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* ── 5. Case Study: Crowne Plaza London Docklands ────────
+          Image LEFT · Text RIGHT
+      ───────────────────────────────────────────────────────── */}
+      <section className="bg-zinc-50">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+
+          <div className="relative min-h-72 lg:min-h-[480px]">
+            <Image
+              src="/commercial/crowne%20plaza%202.avif"
+              alt="Crowne Plaza London Docklands — Fremantle Bar & Kitchen bespoke joinery"
+              fill
+              className="object-cover rounded-none"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+
+          <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
+            <p className="text-[10px] font-semibold tracking-widest uppercase text-zinc-400 mb-3">
+              Case Study
+            </p>
+            <h3 className="font-medium text-zinc-900 text-lg md:text-xl mb-4">
+              Bespoke Joinery Manufacture for Crowne Plaza London Docklands
+            </h3>
+            <p className="font-normal text-zinc-600 text-base leading-relaxed">
+              High-end hospitality environments demand precision-crafted joinery that balances
+              sophisticated aesthetic appeal with commercial durability. Supplied through main
+              contractor PDS Group for the Fremantle Bar &amp; Kitchen refurbishment, M2M Joinery
+              Ltd manufactured the bespoke architectural joinery elements to bring the design
+              concept to life. Our scope focused purely on production excellence, manufacturing
+              complex feature components — including architectural zoning elements and high-backed
+              booth structures — tailored to the historic Royal Docks theme.
+            </p>
+            <CheckList items={crownePlazaBullets} />
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* ── 6. Case Study: Costa Coffee ──────────────────────────
+          Text LEFT · Image RIGHT
+      ───────────────────────────────────────────────────────── */}
+      <section className="bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
 
           <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
@@ -154,80 +234,6 @@ export default function Commercial() {
             <Image
               src="/commercial/costa.jpeg"
               alt="Costa Coffee commercial seating and bar joinery installation"
-              fill
-              className="object-cover rounded-none"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* ── 5. Case Study: Nando's ───────────────────────────────
-          Image LEFT · Text RIGHT
-      ───────────────────────────────────────────────────────── */}
-      <section className="bg-zinc-50">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-
-          <div className="relative min-h-72 lg:min-h-[480px]">
-            <Image
-              src="/commercial/nandos.jpg"
-              alt="Nando's restaurant bespoke feature joinery and booth installations"
-              fill
-              className="object-cover rounded-none"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
-
-          <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
-            <p className="text-[10px] font-semibold tracking-widest uppercase text-zinc-400 mb-3">
-              Case Study
-            </p>
-            <h3 className="font-medium text-zinc-900 text-lg md:text-xl mb-4">
-              Bespoke Fit-Out Features for Nando&apos;s
-            </h3>
-            <p className="font-normal text-zinc-600 text-base leading-relaxed">
-              Nando&apos;s restaurant fit-outs demand joinery that combines visual character with
-              structural durability — features that can withstand the intensive daily use of a
-              busy restaurant environment while retaining the aesthetic quality the brand demands.
-              M2M Joinery Ltd has manufactured bespoke joinery features for Nando&apos;s sites
-              including feature wall panelling, booth surround structures, bar fronts, and service
-              counter components.
-            </p>
-            <CheckList items={nandosBullets} />
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* ── 6. Case Study: Premium Hotels ────────────────────────
-          Text LEFT · Structural showcase image RIGHT
-      ───────────────────────────────────────────────────────── */}
-      <section className="bg-white">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
-
-          <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
-            <p className="text-[10px] font-semibold tracking-widest uppercase text-zinc-400 mb-3">
-              Case Study
-            </p>
-            <h3 className="font-medium text-zinc-900 text-lg md:text-xl mb-4">
-              Architectural Timber Installations for Premium Hotels
-            </h3>
-            <p className="font-normal text-zinc-600 text-base leading-relaxed">
-              Premium hotel fit-outs demand the highest standard of joinery manufacture and
-              finish. M2M Joinery Ltd has supplied architectural timber installations for hotel
-              projects including reception desk structures, bedroom furniture suites, lounge and
-              bar cabinetry, and feature panelling schemes.
-            </p>
-            <CheckList items={hotelBullets} />
-          </div>
-
-          <div className="relative min-h-72 lg:min-h-[480px]">
-            <Image
-              src="/home/hero-slide-4.jpg"
-              alt="Architectural staircase and structural timber installation for premium hotel"
               fill
               className="object-cover rounded-none"
               sizes="(max-width: 1024px) 100vw, 50vw"

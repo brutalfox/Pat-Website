@@ -12,6 +12,9 @@ export const metadata = {
   title: 'M2M Joinery Ltd | Made 2 Measure',
   description:
     'Premier commercial and residential joinery manufacturing workshop based in Sheffield.',
+  icons: {
+    icon: '/brand/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {

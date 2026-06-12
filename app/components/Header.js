@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import Logo from './Logo';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -22,7 +22,13 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center">
-            <Logo variant="light" />
+            <Image
+              src="/brand/favicon.png"
+              alt="M2M Joinery Ltd"
+              width={44}
+              height={44}
+              className="h-11 w-11 object-contain"
+            />
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

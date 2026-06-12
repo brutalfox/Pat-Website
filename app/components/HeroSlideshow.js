@@ -4,12 +4,13 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const slides = [
-  { src: '/home/hero-slide-6.jpg', alt: 'M2M Joinery — premium bar interior installation' },
-  { src: '/home/hero-slide-1.jpg', alt: 'M2M Joinery workshop output — slide 1' },
-  { src: '/home/hero-slide-2.jpg', alt: 'M2M Joinery workshop output — slide 2' },
-  { src: '/home/hero-slide-3.jpg', alt: 'M2M Joinery workshop output — slide 3' },
-  { src: '/home/hero-slide-4.jpg', alt: 'M2M Joinery workshop output — slide 4' },
-  { src: '/home/hero-slide-5.jpg', alt: 'M2M Joinery workshop output — slide 5' },
+  { src: '/home/hero-slide-1.jpg', alt: 'M2M Joinery — bespoke painted garage doors, Sheffield' },
+  { src: '/home/hero-slide-2.jpg', alt: 'M2M Joinery — commercial pub bar interior fit-out' },
+  { src: '/home/hero-slide-3.jpg', alt: 'M2M Joinery — traditional bar and counter installation' },
+  { src: '/home/hero-slide-4.png', alt: 'M2M Joinery — Sheffield workshop floor, precision machining' },
+  { src: '/home/hero-slide-5.jpg', alt: 'M2M Joinery — commercial banquette seating installation' },
+  { src: '/home/hero-slide-6.png', alt: 'M2M Joinery — workshop bench assembly, Sheffield' },
+  { src: '/home/hero-slide-7.jpg', alt: 'M2M Joinery — bespoke commercial shelving and joinery fit-out' },
 ];
 
 export default function HeroSlideshow() {

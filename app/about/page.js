@@ -13,7 +13,7 @@ export default function About() {
       ───────────────────────────────────────────────────────── */}
       <section className="relative min-h-[55vh] flex flex-col items-center justify-center overflow-hidden">
         <Image
-          src="/about/hero%20image.jpg"
+          src="/about/hero%20image.png"
           alt="M2M Joinery workshop interior"
           fill
           className="object-cover object-[center_60%] rounded-none"
@@ -58,7 +58,7 @@ export default function About() {
 
           <div className="relative min-h-72 lg:min-h-[480px]">
             <Image
-              src="/about/m2m%20team.jpg"
+              src="/about/m2m%20team.png"
               alt="The M2M Joinery team"
               fill
               className="object-cover rounded-none"
@@ -105,7 +105,7 @@ export default function About() {
 
           <div className="relative min-h-72 lg:min-h-[480px] order-1 lg:order-2">
             <Image
-              src="/about/technical%20expertise.jpg"
+              src="/about/technical%20expertise.png"
               alt="Technical joinery expertise and precision machining"
               fill
               className="object-cover rounded-none"
@@ -125,7 +125,7 @@ export default function About() {
 
           <div className="relative min-h-72 lg:min-h-[480px]">
             <Image
-              src="/about/serving%20south%20yorkshire.jpg"
+              src="/about/serving%20south%20yorkshire.png"
               alt="M2M Joinery serving South Yorkshire and the UK"
               fill
               className="object-cover rounded-none"

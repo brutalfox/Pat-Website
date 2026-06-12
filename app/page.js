@@ -123,7 +123,7 @@ export default function Home() {
             <div className="bg-white border border-zinc-200/60 shadow-sm rounded-none overflow-hidden">
               <div className="relative h-56 bg-zinc-100">
                 <Image
-                  src="/home/precision-machining.jpg"
+                  src="/home/precision-machining.png"
                   alt="CNC precision machining in M2M joinery workshop"
                   fill
                   className="object-cover object-center"
@@ -147,7 +147,7 @@ export default function Home() {
             <div className="bg-white border border-zinc-200/60 shadow-sm rounded-none overflow-hidden">
               <div className="relative h-56 bg-zinc-100">
                 <Image
-                  src="/home/workshop-assembly.jpg"
+                  src="/home/workshop-assembly.png"
                   alt="Workshop bench assembly and cabinet joinery"
                   fill
                   className="object-cover object-center"
