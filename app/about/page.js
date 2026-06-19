@@ -4,6 +4,17 @@ export const metadata = {
   title: 'About | M2M Joinery Ltd',
 };
 
+const team = [
+  { name: 'Dave',     title: 'Workshop Manager',           img: '/about/dave.png',            objPos: 'object-top'    },
+  { name: 'Sean',     title: 'Workshop Manager',           img: '/about/sean.png',            objPos: 'object-center' },
+  { name: 'Dave',     title: 'Site Installation Lead',     img: '/about/little%20dave.jpg',   objPos: 'object-[50%_25%]' },
+  { name: 'Ash',      title: 'Senior Joiner',              img: '/about/ash.png',             objPos: 'object-top'    },
+  { name: 'Dan',      title: 'Bench Joiner',               img: '/about/dan.png',             objPos: 'object-center' },
+  { name: 'Harrison', title: 'Bench Joiner',               img: '/about/harrison.png',        objPos: 'object-top'    },
+  { name: 'Finn',     title: 'Spray Finishing Technician', img: '/about/finn.png',            objPos: 'object-top'    },
+  { name: 'Patrick',  title: 'Trainee Joiner',             img: '/about/pat.png',             objPos: 'object-center' },
+];
+
 export default function About() {
   return (
     <div>
@@ -42,41 +53,44 @@ export default function About() {
             M2M Joinery Ltd is a specialist joinery manufacturer based in Sheffield, South
             Yorkshire — founded to bridge the gap between elite craftsmanship and the dependable
             delivery standards that modern commercial clients demand. Our workshop on Limestone
-            Cottage Lane is equipped with CNC machinery and traditional hand tools, capable of
-            handling everything from a single residential commission to large-scale multi-unit
-            commercial rollouts.
+            Cottage Lane is equipped with heavy-duty industrial machinery, advanced digital
+            fabrication tools, and traditional hand tools, capable of handling everything from a
+            single residential commission to large-scale multi-unit commercial rollouts.
           </p>
         </div>
       </section>
 
 
-      {/* ── Our Team ─────────────────────────────────────────────
-          Image LEFT · Text RIGHT
+      {/* ── Meet the Team ────────────────────────────────────────
+          2-row × 4-col portrait grid on desktop, 2-col on mobile
       ───────────────────────────────────────────────────────── */}
-      <section className="bg-zinc-50">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+      <section className="py-16 px-4 bg-white border-t border-zinc-200/60">
+        <div className="max-w-5xl mx-auto">
 
-          <div className="relative min-h-72 lg:min-h-[480px]">
-            <Image
-              src="/about/m2m%20team.png"
-              alt="The M2M Joinery team"
-              fill
-              className="object-cover rounded-none"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
-          </div>
+          <h2 className="font-semibold text-zinc-950 tracking-wider text-xl md:text-2xl uppercase mb-12 text-center">
+            Meet the Team
+          </h2>
 
-          <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
-            <h2 className="font-semibold text-zinc-950 tracking-wider text-xl md:text-2xl uppercase mb-6">
-              Our Team
-            </h2>
-            <p className="font-normal text-zinc-600 text-base leading-relaxed max-w-3xl">
-              The M2M team is made up of time-served joiners, skilled bench fabricators, and
-              experienced project managers — all of whom share a genuine passion for the quality
-              and longevity of timber joinery. Many of our craftsmen have decades of experience
-              working across residential, commercial, and heritage joinery sectors, giving us a
-              breadth of technical knowledge that underpins everything we produce.
-            </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-12">
+            {team.map((member, i) => (
+              <div key={i} className="flex flex-col items-center text-center">
+                <div className="relative w-full aspect-square mb-5">
+                  <Image
+                    src={member.img}
+                    alt={member.name}
+                    fill
+                    className={`object-cover rounded-none ${member.objPos}`}
+                    sizes="(max-width: 640px) 50vw, 25vw"
+                  />
+                </div>
+                <p className="font-semibold text-zinc-950 text-sm tracking-wide mb-1">
+                  {member.name}
+                </p>
+                <p className="font-normal text-zinc-500 text-[10px] tracking-widest uppercase">
+                  {member.title}
+                </p>
+              </div>
+            ))}
           </div>
 
         </div>
@@ -105,8 +119,8 @@ export default function About() {
 
           <div className="relative min-h-72 lg:min-h-[480px] order-1 lg:order-2">
             <Image
-              src="/about/technical%20expertise.png"
-              alt="Technical joinery expertise and precision machining"
+              src="/about/spray%20room.png"
+              alt="M2M Joinery spray room and finishing facility"
               fill
               className="object-cover rounded-none"
               sizes="(max-width: 1024px) 100vw, 50vw"

@@ -8,7 +8,7 @@ const slides = [
   { src: '/home/hero-slide-2.jpg', alt: 'M2M Joinery — commercial pub bar interior fit-out' },
   { src: '/home/hero-slide-3.jpg', alt: 'M2M Joinery — traditional bar and counter installation' },
   { src: '/home/hero-slide-4.png', alt: 'M2M Joinery — Sheffield workshop floor, precision machining' },
-  { src: '/home/hero-slide-5.jpg', alt: 'M2M Joinery — commercial banquette seating installation' },
+  { src: '/home/media%20bar.png', alt: 'M2M Joinery — bespoke media bar' },
   { src: '/home/hero-slide-6.png', alt: 'M2M Joinery — workshop bench assembly, Sheffield' },
   { src: '/home/hero-slide-7.jpg', alt: 'M2M Joinery — bespoke commercial shelving and joinery fit-out' },
 ];

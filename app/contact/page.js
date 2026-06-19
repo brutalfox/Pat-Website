@@ -56,10 +56,10 @@ export default function Contact() {
                   Email
                 </p>
                 <a
-                  href="mailto:m2m-group@outlook.com"
+                  href="mailto:info@m2mjoinery.co.uk"
                   className="font-normal text-zinc-700 text-base hover:text-sky-500 transition-colors duration-200"
                 >
-                  m2m-group@outlook.com
+                  info@m2mjoinery.co.uk
                 </a>
               </div>
             </div>

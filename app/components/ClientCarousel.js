@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 const clients = [
-  { name: 'All Bar One',        logo: '/logos/all%20bar%20one.png',             scale: 1.2 },
+  { name: 'All Bar One',        logo: '/logos/all%20bar%20one.png',             scale: 1.5 },
   { name: 'B&Q',                logo: '/logos/b%20and%20q.svg',                 scale: 1.3 },
   { name: 'Costa Coffee',       logo: '/logos/costa%20coffee.png' },
   { name: 'Craft Union',        logo: '/logos/craft%20union.jpg',               scale: 1.2 },
@@ -11,13 +11,13 @@ const clients = [
   { name: 'Greene King',        logo: '/logos/greene%20king.png',               bg: 'bg-zinc-900' },
   { name: 'Greggs',             logo: '/logos/greggs.png' },
   { name: 'Hungry Horse',       logo: '/logos/hungry%20horse.png' },
-  { name: 'Miller & Carter',    logo: '/logos/miller%20and%20carter.png' },
-  { name: 'Mirage Vapes',       logo: '/logos/mirage%20vapes.png' },
+  { name: 'Miller & Carter',    logo: '/logos/miller%20and%20carter.png',  scale: 1.8 },
+  { name: 'Mirage Vapes',       logo: '/logos/mirage%20vapes.png',         scale: 1.8 },
   { name: 'Mitchell & Butlers', logo: '/logos/mitchell%20and%20butlers.png' },
   { name: "Nando's",            logo: '/logos/nandos.png' },
   { name: "O'Neill's",          logo: '/logos/oneils%20logo.png' },
   { name: 'Premier Inn',        logo: '/logos/premier%20inn.png' },
-  { name: 'Sizzling Pubs',      logo: '/logos/sizzling%20pub.png' },
+  { name: 'Sizzling Pubs',      logo: '/logos/sizzling%20pub.png',         scale: 1.5 },
   { name: 'Starbucks',          logo: '/logos/starbucks.png' },
   { name: 'Toby Carvery',       logo: '/logos/toby%20carvery.png' },
   { name: 'Travelodge',         logo: '/logos/travel%20lodge.png' },

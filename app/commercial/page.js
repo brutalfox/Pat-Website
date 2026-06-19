@@ -119,9 +119,9 @@ export default function Commercial() {
 
 
       {/* ── 3. Showcase Projects label ───────────────────────────── */}
-      <div className="py-10 px-10 bg-white border-t border-zinc-200/60 lg:px-16">
+      <div className="pt-10 pb-4 px-10 bg-white border-t border-zinc-200/60 lg:px-16">
         <div className="max-w-6xl mx-auto">
-          <h2 className="font-semibold text-zinc-950 tracking-wider text-xl md:text-2xl uppercase">
+          <h2 className="font-semibold text-zinc-950 tracking-wider text-2xl md:text-[1.8rem] uppercase">
             Showcase Projects
           </h2>
         </div>
@@ -131,7 +131,7 @@ export default function Commercial() {
       {/* ── 4. Case Study: The Pelican, Chew Magna ───────────────
           Text LEFT · Image RIGHT
       ───────────────────────────────────────────────────────── */}
-      <section className="bg-white border-t border-zinc-200/60">
+      <section className="bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
 
           <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
@@ -189,7 +189,7 @@ export default function Commercial() {
               Case Study
             </p>
             <h3 className="font-medium text-zinc-900 text-lg md:text-xl mb-4">
-              Bespoke Joinery Manufacture for Crowne Plaza London Docklands
+              Bespoke Joinery Manufacture for Crowne Plaza, London Docklands
             </h3>
             <p className="font-normal text-zinc-600 text-base leading-relaxed">
               High-end hospitality environments demand precision-crafted joinery that balances

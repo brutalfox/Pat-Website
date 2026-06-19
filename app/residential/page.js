@@ -5,12 +5,12 @@ export const metadata = {
 };
 
 const services = [
-  'Fitted bedroom wardrobes and dressing rooms',
+  'Fitted wardrobes and dressing rooms',
   'Alcove shelving and cabinetry',
   'Home office furniture and built-in desks',
   'Kitchen joinery and pantry units',
   'Bespoke TV and media units',
-  'Utility room storage and laundry cabinetry',
+  'Home bars and entertaining spaces',
   'Staircase balustrades and handrails',
   'Internal doors and door frames',
 ];
@@ -50,38 +50,33 @@ export default function Residential() {
       </section>
 
 
-      {/* ── 2a. Editorial Row 1: Text LEFT · Image RIGHT ─────────
-          Fitted Wardrobes & Cabinetry + Custom Dimensions
-      ───────────────────────────────────────────────────────── */}
+      {/* ── Section title ─────────────────────────────────────────── */}
+      <div className="py-10 px-4 bg-white border-t border-zinc-200/60 text-center">
+        <h2 className="font-bold text-zinc-950 tracking-wider text-3xl md:text-4xl uppercase leading-tight">
+          Residential Specialisms
+        </h2>
+      </div>
+
+
+      {/* ── 2a. Fitted Wardrobes: Text LEFT · Image RIGHT ────────── */}
       <section className="bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
 
-          <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
+          <div className="flex flex-col justify-center px-10 py-10 lg:px-16">
             <h2 className="font-semibold text-zinc-950 tracking-wider text-xl md:text-2xl uppercase mb-6">
-              Fitted Wardrobes &amp; Cabinetry
+              Bespoke Dressing Rooms &amp; Luxury Wardrobes
             </h2>
-            <p className="font-normal text-zinc-600 text-base leading-relaxed mb-8">
-              At M2M Joinery Ltd, our fitted wardrobes and cabinetry are built entirely to your
-              specification — not selected from a catalogue. Every unit we manufacture is designed
-              around the precise dimensions of your room, ensuring a seamless integration with your
-              existing architecture and maximising every available inch of storage.
-            </p>
-            <h3 className="font-medium text-zinc-900 text-lg md:text-xl mb-3">
-              Custom Dimensions
-            </h3>
             <p className="font-normal text-zinc-600 text-base leading-relaxed">
-              No two rooms are the same. Sloped ceilings, alcoves, chimney breasts, and irregular
-              wall angles are not obstacles for our team — they are design opportunities. We survey
-              each space thoroughly before production begins, ensuring the finished joinery fits as
-              though it was always part of the building. Floor-to-ceiling runs, split-level designs,
-              corner units, and walk-in configurations are all part of our standard offering.
+              From floor-to-ceiling dressing rooms to flawlessly integrated master bedroom storage,
+              our bespoke wardrobes are engineered to maximize your space without compromising
+              architectural lines.
             </p>
           </div>
 
-          <div className="relative min-h-72 lg:min-h-[480px]">
+          <div className="relative min-h-72 lg:min-h-[320px]">
             <Image
               src="/residential/wardrobe%20assembly.png"
-              alt="Wardrobe assembly in the M2M Joinery workshop"
+              alt="Bespoke fitted wardrobe assembly"
               fill
               className="object-cover rounded-none"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -92,42 +87,27 @@ export default function Residential() {
       </section>
 
 
-      {/* ── 2b. Editorial Row 2: Image LEFT · Text RIGHT ─────────
-          Workshop Assembly photo · Timber + Installation copy
-      ───────────────────────────────────────────────────────── */}
+      {/* ── 2b. Media Walls: Image LEFT · Text RIGHT ─────────────── */}
       <section className="bg-zinc-50">
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
 
-          <div className="relative min-h-72 lg:min-h-[480px]">
+          <div className="relative min-h-72 lg:min-h-[320px]">
             <Image
-              src="/residential/spray%20room.png"
-              alt="M2M Joinery spray room — factory-finished cabinet painting"
+              src="/residential/media%20bar.png"
+              alt="Bespoke architectural media wall"
               fill
               className="object-cover rounded-none"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
 
-          <div className="flex flex-col justify-center px-10 py-14 lg:px-16">
-            <h3 className="font-medium text-zinc-900 text-lg md:text-xl mb-3">
-              Premium Timber Selection
-            </h3>
-            <p className="font-normal text-zinc-600 text-base leading-relaxed mb-8">
-              The quality of the raw material is the foundation of quality joinery. Our clients are
-              welcome to select from a curated range of premium timber species and board materials —
-              from moisture-resistant MDF for painted finishes to solid oak, walnut, and ash for
-              natural wood aesthetics. All sheet materials are sourced from reputable suppliers and
-              carry the appropriate environmental certification.
-            </p>
-            <h3 className="font-medium text-zinc-900 text-lg md:text-xl mb-3">
-              Seamless Home Installation
-            </h3>
+          <div className="flex flex-col justify-center px-10 py-10 lg:px-16">
+            <h2 className="font-semibold text-zinc-950 tracking-wider text-xl md:text-2xl uppercase mb-6">
+              Architectural Media Walls
+            </h2>
             <p className="font-normal text-zinc-600 text-base leading-relaxed">
-              Our installation team are M2M employees — not subcontractors. They carry the same
-              pride in the finished result as the joiners who built the units in our Sheffield
-              workshop. We take great care to protect your home during installation: dust sheets,
-              careful tool management, and a thorough clean-up are standard practice. Before we
-              leave the site, every door is hung, every hinge adjusted, and every surface inspected.
+              Elevate your living space with a commanding, architectural media wall tailored to
+              seamlessly house your technology, lighting, and display collections.
             </p>
           </div>
 
@@ -135,17 +115,69 @@ export default function Residential() {
       </section>
 
 
-      {/* ── 3. Residential Specialisms Checklist ─────────────────
-          50/50 split — label LEFT · 2-col icon list RIGHT
-      ───────────────────────────────────────────────────────── */}
-      <section className="py-16 px-4 bg-white border-t border-zinc-200/60">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+      {/* ── 2c. Home Bars: Text LEFT · Image RIGHT ───────────────── */}
+      <section className="bg-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
 
-          <div className="lg:sticky lg:top-28">
-            <h2 className="font-bold text-zinc-950 tracking-wider text-3xl md:text-4xl uppercase leading-tight">
-              Residential Specialisms
+          <div className="flex flex-col justify-center px-10 py-10 lg:px-16">
+            <h2 className="font-semibold text-zinc-950 tracking-wider text-xl md:text-2xl uppercase mb-6">
+              Statement Home Bars &amp; Entertaining Spaces
             </h2>
+            <p className="font-normal text-zinc-600 text-base leading-relaxed">
+              Elevate your hosting experience with a bespoke, architectural lounge bar tailored to
+              bring the luxury of a premium venue into your private residence.
+            </p>
           </div>
+
+          <div className="relative min-h-72 lg:min-h-[320px]">
+            <Image
+              src="/residential/home%20bar.png"
+              alt="Bespoke statement home bar and entertaining space"
+              fill
+              className="object-cover rounded-none"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* ── 2d. Bifold Doors: Image LEFT · Text RIGHT ────────────── */}
+      <section className="bg-zinc-50">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2">
+
+          <div className="relative min-h-72 lg:min-h-[320px]">
+            <Image
+              src="/residential/bifold%20doors.png"
+              alt="Premium bifold doors installation"
+              fill
+              className="object-cover rounded-none"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+
+          <div className="flex flex-col justify-center px-10 py-10 lg:px-16">
+            <h2 className="font-semibold text-zinc-950 tracking-wider text-xl md:text-2xl uppercase mb-6">
+              Bifold Doors
+            </h2>
+            <p className="font-normal text-zinc-600 text-base leading-relaxed">
+              Bridge the gap between internal luxury and your outdoor space with premium,
+              low-profile bifold doors engineered for effortless, fluid motion.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* ── 3. Further Capabilities Checklist ────────────────────── */}
+      <section className="py-16 px-4 bg-white border-t border-zinc-200/60">
+        <div className="max-w-5xl mx-auto">
+
+          <h2 className="font-bold text-zinc-950 tracking-wider text-3xl md:text-4xl uppercase leading-tight mb-10">
+            Further Capabilities
+          </h2>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4">
             {services.map(item => (
@@ -172,7 +204,7 @@ export default function Residential() {
       ───────────────────────────────────────────────────────── */}
       <section className="relative h-[400px] overflow-hidden">
         <Image
-          src="/residential/living%20room.jpg"
+          src="/residential/living%20room.png"
           alt="Bespoke residential joinery — premium living room installation"
           fill
           className="object-cover rounded-none"
@@ -181,7 +213,67 @@ export default function Residential() {
       </section>
 
 
-      {/* ── 5. Testimonials ──────────────────────────────────────
+      {/* ── 5. White-Glove Installation ──────────────────────────
+          Split grid: copy left · installation guarantees right
+      ───────────────────────────────────────────────────────── */}
+      <section className="py-20 px-4 bg-white border-t border-zinc-200/60">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
+
+          <div>
+            <p className="font-semibold text-zinc-400 text-[10px] tracking-widest uppercase mb-4">
+              White-Glove Installation
+            </p>
+            <h2 className="font-bold text-zinc-950 tracking-wider text-3xl md:text-4xl uppercase leading-tight mb-4">
+              The M2M Residential Fit
+            </h2>
+            <p className="font-semibold text-zinc-950 text-xl leading-snug mb-8">
+              No Outsourcing. No Mess.
+            </p>
+            <p className="font-normal text-zinc-600 text-base leading-relaxed">
+              We understand that a home renovation is a deeply personal investment. Unlike other
+              joinery providers who hand your project off to third-party subcontractors, our fitted
+              bedrooms, home bars, and architectural media walls are installed exclusively by our
+              own full-time, highly trained carpenters. We arrive utilise advanced M-class dust
+              extraction systems on-site, lay down comprehensive floor-and-wall protection, and
+              leave your home entirely immaculate.
+            </p>
+          </div>
+
+          <div className="flex flex-col justify-center">
+            <div className="border-t border-zinc-200 py-6">
+              <p className="font-semibold text-zinc-950 text-[10px] tracking-widest uppercase mb-2">
+                In-House Carpenters Only
+              </p>
+              <p className="font-normal text-zinc-500 text-sm leading-relaxed">
+                Zero subcontracting — every installation is carried out exclusively by our own
+                full-time, highly trained team.
+              </p>
+            </div>
+            <div className="border-t border-zinc-200 py-6">
+              <p className="font-semibold text-zinc-950 text-[10px] tracking-widest uppercase mb-2">
+                M-Class Dust Extraction
+              </p>
+              <p className="font-normal text-zinc-500 text-sm leading-relaxed">
+                Advanced extraction systems deployed on every job — no dust, no disruption,
+                no trace.
+              </p>
+            </div>
+            <div className="border-t border-b border-zinc-200 py-6">
+              <p className="font-semibold text-zinc-950 text-[10px] tracking-widest uppercase mb-2">
+                Full Floor &amp; Wall Protection
+              </p>
+              <p className="font-normal text-zinc-500 text-sm leading-relaxed">
+                Comprehensive site protection laid as standard — your home left entirely
+                immaculate on completion.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* ── 6. Testimonials ──────────────────────────────────────
           Flat bg-zinc-50, no card borders or shadows
       ───────────────────────────────────────────────────────── */}
       <section className="py-20 px-4 bg-zinc-50">
