@@ -5,10 +5,10 @@ export const metadata = {
 };
 
 const team = [
-  { name: 'Dave',     title: 'Workshop Manager',           img: '/about/dave.png',            objPos: 'object-top'    },
+  { name: 'Dave',     title: 'Workshop Manager',           img: '/about/dave.jpg',            objPos: 'object-center' },
   { name: 'Sean',     title: 'Workshop Manager',           img: '/about/sean.png',            objPos: 'object-center' },
-  { name: 'Dave',     title: 'Site Installation Lead',     img: '/about/little%20dave.jpg',   objPos: 'object-[50%_25%]' },
-  { name: 'Ash',      title: 'Senior Joiner',              img: '/about/ash.png',             objPos: 'object-top'    },
+  { name: 'Dave',     title: 'Site Installation Lead',     img: '/about/little%20dave.png',   objPos: 'object-[50%_25%]' },
+  { name: 'Ash',      title: 'Senior Joiner',              img: '/about/ash.png',             objPos: 'object-center' },
   { name: 'Dan',      title: 'Bench Joiner',               img: '/about/dan.png',             objPos: 'object-center' },
   { name: 'Harrison', title: 'Bench Joiner',               img: '/about/harrison.png',        objPos: 'object-top'    },
   { name: 'Finn',     title: 'Spray Finishing Technician', img: '/about/finn.png',            objPos: 'object-top'    },
